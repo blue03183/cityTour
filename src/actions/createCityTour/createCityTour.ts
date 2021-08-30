@@ -16,7 +16,7 @@ export class CreateCityTour extends Action {
           const checkRegex = /^\d{4}-\d{2}-\d{2}$/;
           if (!checkRegex.test(param)) {
             return {
-              error_code: 'e4010',
+              status: 'failure',
               message: '여행 시작일은 0000-00-00 형식으로 입력해주십시오.'
             };
           }
@@ -28,7 +28,7 @@ export class CreateCityTour extends Action {
           const checkRegex = /^\d{4}-\d{2}-\d{2}$/;
           if (!checkRegex.test(param)) {
             return {
-              error_code: 'e4010',
+              status: 'failure',
               message: '여행 종료일은 0000-00-00 형식으로 입력해주십시오.'
             };
           }

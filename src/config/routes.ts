@@ -8,7 +8,8 @@ export const DEFAULT = {
       ],
 
       post: [
-        { path: '/createCityTour', action: 'createCityTour' } // (POST) /api/login/123
+        { path: '/createCityTour', action: 'createCityTour' },
+        { path: '/searchTour', action: 'searchTour' },
       ],
 
       /* ---------------------
