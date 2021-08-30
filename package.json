@@ -8,10 +8,12 @@
   },
   "dependencies": {
     "actionhero": "27.0.3",
-    "ws": "latest",
     "ioredis": "latest",
     "ioredis-mock": "latest",
-    "winston": "latest"
+    "moment": "^2.29.1",
+    "mysql2": "^2.3.0",
+    "winston": "latest",
+    "ws": "latest"
   },
   "devDependencies": {
     "@types/node": "latest",

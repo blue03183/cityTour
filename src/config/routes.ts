@@ -7,6 +7,10 @@ export const DEFAULT = {
         { path: "/createChatRoom", action: "createChatRoom" },
       ],
 
+      post: [
+        { path: '/createCityTour', action: 'createCityTour' } // (POST) /api/login/123
+      ],
+
       /* ---------------------
       For web clients (http and https) you can define an optional RESTful mapping to help route requests to actions.
       If the client doesn't specify and action in a param, and the base route isn't a named action, the action will attempt to be discerned from this routes.js file.
