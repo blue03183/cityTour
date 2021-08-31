@@ -73,6 +73,7 @@ CREATE TABLE `tour` (
 
 ### API 문서
 - 서버 실행후 http://localhost:8080 호출을 통해 api 문서를 확인할 수 있습니다.
+![image](https://user-images.githubusercontent.com/16997252/131489037-96c1032a-76a2-408b-b918-09063485e603.png)
 
 
 ### 테스트
