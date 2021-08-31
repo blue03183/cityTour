@@ -73,6 +73,7 @@ CREATE TABLE `tour` (
 
 ### API 문서
 - 서버 실행후 http://localhost:8080 호출을 통해 api 문서를 확인할 수 있습니다.
+
 ![image](https://user-images.githubusercontent.com/16997252/131489037-96c1032a-76a2-408b-b918-09063485e603.png)
 
 
@@ -80,3 +81,6 @@ CREATE TABLE `tour` (
 - 테스트는 아래의 명령어를 통해 실행 가능합니다.
 - `npm run test:create`: 도시여행 등록 테스트
 - `npm run test:search`: 도시여행 조회 테스트
+
+![image](https://user-images.githubusercontent.com/16997252/131489170-258b0722-daf3-48fb-84ad-ec0c0219e521.png)
+
