@@ -7,7 +7,7 @@ export const DEFAULT = {
       host: 'localhost',
       user: 'root',
       password: '1234',
-      database: 'cityTour',
+      database: 'travel',
       charset: 'utf8_general_ci',
       timezone: 'local',
       connectTimeout: 10000,
