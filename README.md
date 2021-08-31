@@ -84,3 +84,10 @@ CREATE TABLE `tour` (
 
 ![image](https://user-images.githubusercontent.com/16997252/131489170-258b0722-daf3-48fb-84ad-ec0c0219e521.png)
 
+
+### 실행
+
+```shell
+npm run dev
+```
+명령어를 통해 로컬 서버를 실행후 api 문서에 따라 액션을 호출합니다.
