@@ -16,8 +16,9 @@
     "ws": "latest"
   },
   "devDependencies": {
-    "@types/node": "latest",
     "@types/jest": "latest",
+    "@types/node": "latest",
+    "apidoc": "^0.29.0",
     "jest": "latest",
     "prettier": "latest",
     "ts-jest": "latest",
@@ -35,7 +36,8 @@
     "lint": "prettier --check src/*/** __tests__/*/**",
     "pretty": "prettier --write src/*/** __tests__/*/**",
     "test:create": "jest actions/createCityTour.ts --forceExit --testTimeout=500000",
-    "test:search": "jest actions/searchTour.ts --forceExit --testTimeout=500000"
+    "test:search": "jest actions/searchTour.ts --forceExit --testTimeout=500000",
+    "apidoc": "apidoc -i src/ -o public/ -t template"
   },
   "jest": {
     "testEnvironment": "node",

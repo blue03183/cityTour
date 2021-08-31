@@ -103,8 +103,6 @@ export class SearchTour extends Action {
         })
       };
     } catch (err) {
-      console.log('----------------err----------------');
-      console.log(err);
       response.result = {
         status: 'failure',
         message: err.message || '여행 조회에 실패하였습니다.'

@@ -1,0 +1,8 @@
+{ 
+  "name": "도시 조회 API",
+  "version": "1.0.0",
+  "description": "여행 등록 및 여행 도시 조회 API 입니다.",
+  "title": "CITY TRAVEL API",
+  "url": "http://localhost:8080/api/",
+  "sampleUrl": "http://localhost:8080/api/"
+}
