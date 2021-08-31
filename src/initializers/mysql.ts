@@ -11,19 +11,13 @@ class Base {
   }
 
   async query (sql: string, args: any) {
-    if (process.env.NODE_ENV === 'test') {
-      if (sql.toUpperCase().includes('INSERT INTO')) {
-        return {
-          insertId: 999
-        }
-      } else if (sql.toUpperCase().includes('UPDATE') || sql.toUpperCase().includes('DELETE')) {
-        return {
-          affectedRows: 999
-        }
-      } else {
-        return {
-          test: 'testData'
-        }
+    if (process.env.NODE_ENV === 'test' && sql.toUpperCase().includes('INSERT')) {
+      return {
+        insertId: 999
+      }
+    } else if (process.env.NODE_ENV === 'test' && (sql.toUpperCase().includes('UPDATE') || sql.toUpperCase().includes('DELETE'))) {
+      return {
+        affectedRows: 999
       }
     } else {
       const returnData = await this[this.promiseTarget].query(sql, args)

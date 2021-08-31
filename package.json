@@ -30,11 +30,12 @@
     "debug": "tsc && ts-node-dev --transpile-only --no-deps --inspect -- ./src/server ",
     "start": "node ./dist/server.js",
     "actionhero": "actionhero",
-    "test": "jest",
     "pretest": "npm run build && npm run lint",
     "build": "tsc --sourceMap false --declaration",
     "lint": "prettier --check src/*/** __tests__/*/**",
-    "pretty": "prettier --write src/*/** __tests__/*/**"
+    "pretty": "prettier --write src/*/** __tests__/*/**",
+    "test:create": "jest actions/createCityTour.ts --forceExit --testTimeout=500000",
+    "test:search": "jest actions/searchTour.ts --forceExit --testTimeout=500000"
   },
   "jest": {
     "testEnvironment": "node",
